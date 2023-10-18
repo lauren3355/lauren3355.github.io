@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Evolution of Sight</title>
+    <title>Evolution of Eyes</title>
 </head>
 
 <style>
@@ -12,7 +12,7 @@
 </style>
 
 <section class="header">
-    <h1> Evolution of Sight</h1>
+    <h1> Evolution of Eyes</h1>
     <p> Click the buttons on the timeline to learn more!</p>
 </section>
 
@@ -49,97 +49,809 @@ p {
 
 </style>
 
-<!-- this is the button --------------------------------------------------------- -->
+<!---Exit button------------------------------------------------------------------------------------------->
+
+<button type="button" onclick="exit()" id="exitb">
+  Exit Box
+</button>
+
+<style>
+  #exitb {
+    background-color: #3d413b;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+   display: inline-block;
+   font-size: 18px;
+   font-family: 'Lato';
+   position: absolute;
+   left: 10px;
+   Top: 200px;
+  }
+</style>
+
+<script>
+  function exit() {
+      if (document.getElementById('block1').style.display == "block")
+      {
+        document.getElementById('block1').style.display = "none";
+      }
+      else if (document.getElementById('block2').style.display == "block")
+      {
+        document.getElementById('block2').style.display = "none";
+      }
+      else if (document.getElementById('block3').style.display == "block")
+      {
+        document.getElementById('block3').style.display = "none";
+      }
+      else if (document.getElementById('block4').style.display == "block")
+      {
+        document.getElementById('block4').style.display = "none";
+      }
+      else if (document.getElementById('block5').style.display == "block")
+      {
+        document.getElementById('block5').style.display = "none";
+      }
+      else if (document.getElementById('block6').style.display == "block")
+      {
+        document.getElementById('block6').style.display = "none";
+      }
+      else if (document.getElementById('block7').style.display == "block")
+      {
+        document.getElementById('block7').style.display = "none";
+      }
+      else if (document.getElementById('block8').style.display == "block")
+      {
+        document.getElementById('block8').style.display = "none";
+      }
+      else if (document.getElementById('block9').style.display == "block")
+      {
+        document.getElementById('block9').style.display = "none";
+      }
+      else if (document.getElementById('block10').style.display == "block")
+      {
+        document.getElementById('block10').style.display = "none";
+      }
+  }
+</script>
+
+<!-- button 1 ------------------------------------------------------------------------------------> 
 
 <head>
   <style>
-      /* Set display to none for image*/
-      #image {
+      #block1 {
           display: none;
       }
   </style>
 </head>
 
 <body>
-  <div>
-    <img id="image"
-    src="images/Tiktaalik-scaled.png"
-    width="500"
-  </div>
+    <img id="block1"
+    src="images/bloc1.png"
+    width="1200">
 
 <style>
-  #image {
-    position: absolute;
-    left: 500px;
-    bottom: 200px;
+  #block1 {
+    position: absolute; z-index: 4;
+    left: 300px;
+    top: 300px;
   }
 </style>
 
-  <button type="button" onclick="show()" id="btnID">
-      Paramecium
+  <button type="button" onclick="show1()" id="btnID">
+      First Photoreceptor Proteins
   </button>
 
   <style>
     #btnID {
-      background-color: #304831; /* Green */
-      border: none;
+      background-color: #5c9041; /* Green */
       color: white;
-      padding: 5px 15px;
+      border: none;
+      padding: 10px 15px;
       text-align: center;
-      text-decoration: none;
      display: inline-block;
-     font-size: 16px;
+     font-size: 18px;
      font-family: 'Lato';
      position: absolute;
-     left: 200px;
-     Bottom: 200px;
+     left: 160px;
+     Top: 530px;
+     position: absolute; z-index: 3;
     }
-
   </style>
 
   <script>
-      function show() {
+      function show1() {
           /* Access image by id and change
           the display property to block*/
-          if (document.getElementById('image').style.display == "block")
-          {
-            document.getElementById('image').style.display = "none";
-          }
-          else
-          {
-            document.getElementById('image').style.display = "block";
+            document.getElementById('block1').style.display = "block";
           }
           
-      }
   </script>
 </body>
 
-<!-- --------------------------------------------------------- -->
+<!-- button 2 ------------------------------------------------------------------------------------>
 
-<p>
+<head>
+  <style>
+      #block2 {
+          display: none;
+      }
+  </style>
+</head>
+
+<body>
+    <img id="block2"
+    src="images/bloc2.png"
+    width="1200">
+
+<style>
+  #block2 {
+    position: absolute; z-index: 4;
+    left: 300px;
+    top: 300px;
+  }
+</style>
+
+<button type="button" onclick="show2()" id="btnID2">
+  Eyespots in Protozoa
+</button>
+
+<style>
+#btnID2 {
+  background-color: #5c9041; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+ display: inline-block;
+ font-size: 18px;
+ font-family: 'Lato';
+ position: absolute;
+ left: 385px;
+ Top: 800px;
+ position: absolute; z-index: 3;
+}
+</style>
+
+<script>
+  function show2() {
+      /* Access image by id and change
+      the display property to block*/
+        document.getElementById('block2').style.display = "block";
+      }
+      
+</script>
+
+<!-- button 3 ------------------------------------------------------------------------------------>
+
+<head>
+  <style>
+      #block3 {
+          display: none;
+      }
+  </style>
+</head>
+
+<body>
+    <img id="block3"
+    src="images/bloc3.png"
+    width="1200">
+
+<style>
+  #block3 {
+    position: absolute; z-index: 4;
+    left: 300px;
+    top: 300px;
+  }
+</style>
+
+<button type="button" onclick="show3()" id="btnID3">
+  Hydra Photosensitivity
+</button>
+
+<style>
+#btnID3 {
+  background-color: #5c9041; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+ display: inline-block;
+ font-size: 18px;
+ font-family: 'Lato';
+ position: absolute;
+ left: 430px;
+ Top: 460px;
+ position: absolute; z-index: 3;
+}
+</style>
+
+<script>
+  function show3() {
+      /* Access image by id and change
+      the display property to block*/
+        document.getElementById('block3').style.display = "block";
+      }
+      
+</script>
+
+<!-- button 4 ------------------------------------------------------------------------------------>
+
+<head>
+  <style>
+      #block4 {
+          display: none;
+      }
+  </style>
+</head>
+
+<body>
+    <img id="block4"
+    src="images/bloc4.png"
+    width="1200">
+
+<style>
+  #block4 {
+    position: absolute; z-index: 4;
+    left: 300px;
+    top: 300px;
+  }
+</style>
+
+<button type="button" onclick="show4()" id="btnID4">
+  Sea Urchin Photosensitivity
+</button>
+
+<style>
+#btnID4 {
+  background-color: #5c9041; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+ display: inline-block;
+ font-size: 18px;
+ font-family: 'Lato';
+ position: absolute;
+ left: 500px;
+ Top: 860px;
+ position: absolute; z-index: 3;
+}
+</style>
+
+<script>
+  function show4() {
+      /* Access image by id and change
+      the display property to block*/
+        document.getElementById('block4').style.display = "block";
+      }
+      
+</script>
+
+<!-- button 5 ------------------------------------------------------------------------------------>
+
+<head>
+  <style>
+      #block5 {
+          display: none;
+      }
+  </style>
+</head>
+
+<body>
+    <img id="block5"
+    src="images/bloc5.png"
+    width="1200">
+
+<style>
+  #block5 {
+    position: absolute; z-index: 4;
+    left: 300px;
+    top: 300px;
+  }
+</style>
+
+<button type="button" onclick="show5()" id="btnID5">
+  Flatworms: Eyespots and a Nervous System
+</button>
+
+<style>
+#btnID5 {
+  background-color: #5c9041; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  text-align: center;
+ display: inline-block;
+ font-size: 18px;
+ font-family: 'Lato';
+ position: absolute;
+ left: 550px;
+ Top: 540px;
+ position: absolute; z-index: 3;
+}
+</style>
+
+<script>
+  function show5() {
+      /* Access image by id and change
+      the display property to block*/
+        document.getElementById('block5').style.display = "block";
+      }
+      
+</script>
+
+<!-- button 6 ------------------------------------------------------------------------------------>
+
+<head>
+  <style>
+      #block6 {
+          display: none;
+      }
+  </style>
+</head>
+
+<body>
+    <img id="block6"
+    src="images/bloc6.png"
+    width="1200">
+
+<style>
+  #block6 {
+    position: absolute; z-index: 4;
+    left: 300px;
+    top: 300px;
+  }
+</style>
+
+<button type="button" onclick="show6()" id="btnID6">
+  First Eyes in the Cambrian Explosion
+</button>
+
+<style>
+#btnID6 {
+  background-color: #5c9041; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+ display: inline-block;
+ font-size: 18px;
+ font-family: 'Lato';
+ position: absolute;
+ left: 670px;
+ Top: 440px;
+ position: absolute; z-index: 3;
+}
+</style>
+
+<script>
+  function show6() {
+      /* Access image by id and change
+      the display property to block*/
+        document.getElementById('block6').style.display = "block";
+      }
+      
+</script>
+
+<!-- button 7 ------------------------------------------------------------------------------------>
+
+<head>
+  <style>
+      #block7 {
+          display: none;
+      }
+  </style>
+</head>
+
+<body>
+    <img id="block7"
+    src="images/bloc7.png"
+    width="1400">
+
+<style>
+  #block7 {
+    position: absolute; z-index: 4;
+    left: 200px;
+    top: 300px;
+  }
+</style>
+
+<button type="button" onclick="show7()" id="btnID7">
+  The Evolution of Camera-Style Eyes
+</button>
+
+<style>
+#btnID7 {
+  background-color: #5c9041; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+ display: inline-block;
+ font-size: 18px;
+ font-family: 'Lato';
+ position: absolute;
+ left: 770px;
+ Top: 805px;
+ position: absolute; z-index: 3;
+}
+</style>
+
+<script>
+  function show7() {
+      /* Access image by id and change
+      the display property to block*/
+        document.getElementById('block7').style.display = "block";
+      }
+      
+</script>
+
+<!-- button 8 ------------------------------------------------------------------------------------>
+
+<head>
+  <style>
+      #block8 {
+          display: none;
+      }
+  </style>
+</head>
+
+<body>
+    <img id="block8"
+    src="images/bloc8.png"
+    width="1500">
+
+<style>
+  #block8 {
+    position: absolute; z-index: 4;
+    left: 150px;
+    top: 300px;
+  }
+</style>
+
+<button type="button" onclick="show8()" id="btnID8">
+  Vertebrate vs Mollusk Eyes
+</button>
+
+<style>
+#btnID8 {
+  background-color: #5c9041; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 49px;
+  text-align: center;
+ display: inline-block;
+ font-size: 18px;
+ font-family: 'Lato';
+ position: absolute;
+ left: 770px;
+ Top: 865px;
+ position: absolute; z-index: 3;
+}
+</style>
+
+<script>
+  function show8() {
+      /* Access image by id and change
+      the display property to block*/
+        document.getElementById('block8').style.display = "block";
+      }
+      
+</script>
+
+<!-- button 9 ------------------------------------------------------------------------------------>
+
+<head>
+  <style>
+      #block9 {
+          display: none;
+      }
+  </style>
+</head>
+
+<body>
+    <img id="block9"
+    src="images/bloc9.png"
+    width="1200">
+
+<style>
+  #block9 {
+    position: absolute; z-index: 4;
+    left: 300px;
+    top: 300px;
+  }
+</style>
+
+<button type="button" onclick="show9()" id="btnID9">
+  Variations in Vertebrate Eyes
+</button>
+
+<style>
+#btnID9 {
+  background-color: #5c9041; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+ display: inline-block;
+ font-size: 18px;
+ font-family: 'Lato';
+ position: absolute;
+ left: 1050px;
+ Top: 530px;
+ position: absolute; z-index: 3;
+}
+</style>
+
+<script>
+  function show9() {
+      /* Access image by id and change
+      the display property to block*/
+        document.getElementById('block9').style.display = "block";
+      }
+      
+</script>
+
+<!-- button 10 ------------------------------------------------------------------------------------>
+
+<head>
+  <style>
+      #block10 {
+          display: none;
+      }
+  </style>
+</head>
+
+<body>
+    <img id="block10"
+    src="images/bloc10.png"
+    width="1200">
+
+<style>
+  #block10 {
+    position: absolute; z-index: 4;
+    left: 300px;
+    top: 300px;
+  }
+</style>
+
+<button type="button" onclick="show10()" id="btnID10">
+  The Human Eye
+</button>
+
+<style>
+#btnID10 {
+  background-color: #5c9041; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  text-align: center;
+ display: inline-block;
+ font-size: 18px;
+ font-family: 'Lato';
+ position: absolute;
+ left: 1360px;
+ Top: 800px;
+ width: 150;
+ display: block;
+ position: absolute; z-index: 3;
+}
+</style>
+
+<script>
+  function show10() {
+      /* Access image by id and change
+      the display property to block*/
+        document.getElementById('block10').style.display = "block";
+      }
+      
+</script>
+
+<!-- Timeline pictures ------------------------------------------------------------------> 
+<br>
+
+<div style="position: relative;">
+  <img src="images/pic1.png"  width="150" style="position: absolute; left: 200px; top: 140px;">
+</div>
+
+<div style="position: relative;">
+  <img src="images/pic2.png"  width="180" style="position: absolute; left: 250px; top: 550px;">
+</div>
+
+<div style="position: relative;">
+  <img src="images/pic3.png"  width="180" style="position: absolute; left: 700px; top: 120px;">
+</div>
+
+<div style="position: relative;">
+  <img src="images/pic4.png"  width="180" style="position: absolute; left: 450px; top: 100px;">
+</div>
+
+<div style="position: relative;">
+  <img src="images/pic5.png"  width="160" style="position: absolute; left: 540px; top: 700px;">
+</div>
+
+<div style="position: relative;">
+  <img src="images/pic6.png"  width="160" style="position: absolute; left: 850px; top: 300px;">
+</div>
+
+<div style="position: relative;">
+  <img src="images/pic6.png"  width="160" style="position: absolute; left: 850px; top: 300px;">
+</div>
+
+<div style="position: absolute; z-index: 2;">
+  <img src="images/pic7.png"  width="140" style="position: absolute; left: 950px; top: 490px;">
+</div>
+
+<div style="position: relative;">
+  <img src="images/pic8.png"  width="140" style="position: absolute; left: 760px; top: 710px;">
+</div>
+
+<div style="position: relative;">
+  <img src="images/pic9.png"  width="150" style="position: absolute; left: 920px; top: 710px;">
+</div>
+
+<div style="position: relative;">
+  <img src="images/pic10.png"  width="180" style="position: absolute; left: 1080px; top: 180px;">
+</div>
+
+<div style="position: relative;">
+  <img src="images/pic11.png"  width="160" style="position: absolute; left: 1370px; top: 650px;">
+</div>
+
+<!-- timeline image --------------------------------------------------------------------->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
-</p>
 
-<!-- timeline image --------------------------------------------------------- -->
-    <center>
-<img src="images/line.png"
-    width="1500" />
-    </center>
+<img src="images/line.png" id="line"
+    width="1500" 
+    style="margin-left: 150px; top: 405px;"/>
 
+    <style>
+      #line {
+        position: absolute; z-index: 1;
+      }
+    </style>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
     <section class="header">
     <p2> References </p2>
     </section>
 
     <p> 
-      [1]
+      [1] Larusso, N.D., Ruttenberg, B.E., Singh, A.K., and Oakley, T.H. (2008). Type II opsins: evolutionary origin by internal domain duplication? J Mol Evol 66, 417-423. 10.1007/s00239-008-9076-6.
       </p>
       <p>
-      [2]
+      [2] Shichida, Y., and Matsuyama, T. (2009). Evolution of opsins and phototransduction. Philos Trans R Soc Lond B Biol Sci 364, 2881-2895. 10.1098/rstb.2009.0051.
     </p>
     <p>
-      [3]
+      [3] Feuda, R., Hamilton, S.C., McInerney, J.O., and Pisani, D. (2012). Metazoan opsin evolution reveals a simple route to animal vision. Proceedings of the National Academy of Sciences 109, 18868-18872. doi:10.1073/pnas.1204609109.
+    </p>
+    <p>
+      [4] Lamb, T.D. (2011). EVOLUTION OF THE EYE. Scientific American 305, 64-69.
+    </p>
+    <p>
+      [5] Colley, N.J., and Nilsson, D.E. (2016). Photoreception in Phytoplankton. Integr Comp Biol 56, 764-775. 10.1093/icb/icw037.
+    </p>
+    <p>
+      [6] Plachetzki, D.C., Fong, C.R., and Oakley, T.H. (2012). Cnidocyte discharge is regulated by light and opsin-mediated phototransduction. BMC Biology 10, 17. 10.1186/1741-7007-10-17.
+    </p>
+    <p>
+      [7] Yerramilli, D., and Johnsen, S. (2010). Spatial vision in the purple sea urchin Strongylocentrotus purpuratus (Echinoidea). Journal of Experimental Biology 213, 249-255. 10.1242/jeb.033159.
+    </p>
+    <p>
+      [8] Shettigar, N., Joshi, A., Dalmeida, R., Gopalkrishna, R., Chakravarthy, A., Patnaik, S., Mathew, M., Palakodeti, D., and Gulyani, A. (2017). Hierarchies in light sensing and dynamic interactions between ocular and extraocular sensory networks in a flatworm. Sci Adv 3, e1603025. 10.1126/sciadv.1603025.
+    </p>
+    <p>
+      [9] He, T., Zhu, M., Mills, B.J.W., Wynn, P.M., Zhuravlev, A.Y., Tostevin, R., Pogge von Strandmann, P.A.E., Yang, A., Poulton, S.W., and Shields, G.A. (2019). Possible links between extreme oxygen perturbations and the Cambrian radiation of animals. Nat Geosci 12, 468-474. 10.1038/s41561-019-0357-z.
+    </p>
+    <p>
+      [10] Schoenemann, B., Pärnaste, H., and Clarkson, E.N. (2017). Structure and function of a compound eye, more than half a billion years old. Proceedings of the National Academy of Sciences 114, 13489-13494.
+    </p>
+    <p>
+      [11] Lamb, T.D. (2013). Evolution of phototransduction, vertebrate photoreceptors and retina. Progress in Retinal and Eye Research 36, 52-119. https://doi.org/10.1016/j.preteyeres.2013.06.001.
+    </p>
+    <p>
+      [12] Slingsby, C., Wistow, G.J., and Clark, A.R. (2013). Evolution of crystallins for a role in the vertebrate eye lens. Protein Sci 22, 367-380. 10.1002/pro.2229.
+    </p>
+    <p>
+      [13] Narberhaus, F. (2002). Alpha-crystallin-type heat shock proteins: socializing minichaperones in the context of a multichaperone network. Microbiol Mol Biol Rev 66, 64-93; table of contents. 10.1128/mmbr.66.1.64-93.2002.
+    </p>
+    <p>
+      [14] Ogura, A., Ikeo, K., and Gojobori, T. (2004). Comparative analysis of gene expression for convergent evolution of camera eye between octopus and human. Genome Res 14, 1555-1561. 10.1101/gr.2268104.
+    </p>
+    <p>
+      [15] Lamb, T.D., Collin, S.P., and Pugh, E.N., Jr. (2007). Evolution of the vertebrate eye: opsins, photoreceptors, retina and eye cup. Nat Rev Neurosci 8, 960-976. 10.1038/nrn2283.
+    </p>
+    <p>
+      [16] Nilsson, D.-E. (2004). Eye evolution: a question of genetic promiscuity. Current Opinion in Neurobiology 14, 407-414. https://doi.org/10.1016/j.conb.2004.07.004.
+    </p>
+    <p>
+      [17] Arendt, D., Tessmar-Raible, K., Snyman, H., Dorresteijn, A.W., and Wittbrodt, J. (2004). Ciliary Photoreceptors with a Vertebrate-Type Opsin in an Invertebrate Brain. Science 306, 869-871. doi:10.1126/science.1099955.
+    </p>
+    <p>
+      [18] Morshedian, A., and Fain, G.L. (2017). The evolution of rod photoreceptors. Philosophical Transactions of the Royal Society B: Biological Sciences 372, 20160074.
+    </p>
+    <p>
+      [19] Do, M.T.H., and Yau, K.-W. (2010). Intrinsically Photosensitive Retinal Ganglion Cells. Physiological Reviews 90, 1547-1581. 10.1152/physrev.00013.2010.
+    </p>
+    <p>
+      [20] Banks, M.S., Sprague, W.W., Schmoll, J., Parnell, J.A.Q., and Love, G.D. (2015). Why do animal eyes have pupils of different shapes? Science Advances 1, e1500391. doi:10.1126/sciadv.1500391.
+    </p>
+    <p>
+      [21] Mearing, A.S., Burkart, J.M., Dunn, J., Street, S.E., and Koops, K. (2022). The evolutionary drivers of primate scleral coloration. Scientific Reports 12, 14119. 10.1038/s41598-022-18275-9.
+    </p>
+    <p>
+      [22] Gerl, E.J., and Morris, M.R. (2008). The Causes and Consequences of Color Vision. Evolution: Education and Outreach 1, 476-486. 10.1007/s12052-008-0088-x.
     </p>
 
     <style>
